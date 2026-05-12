@@ -13,8 +13,12 @@ class ResumeData(BaseModel):
 class JobDescription(BaseModel):
     title: str
     required_skills: List[str]
-    preferred_skills: List[str]
+    preferred_skills: List[str] = []
 
+class EvaluationRequest(BaseModel):
+    resume: ResumeData
+    jd: JobDescription
+    
 class EvaluationResult(BaseModel):
     match_score: int
     matched_skills: List[str]
