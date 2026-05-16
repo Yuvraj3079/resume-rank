@@ -1,0 +1,34 @@
+{
+  "resume": {
+    "name": "Emma Wilson",
+
+    "skills": [
+      "Photoshop",
+      "Illustrator",
+      "Canva"
+    ],
+
+    "experience": [
+      {
+        "company": "Creative Studio",
+        "role": "Graphic Designer"
+      }
+    ]
+  },
+
+  "jd": {
+    "title": "Backend Engineer",
+
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Docker",
+      "AWS"
+    ],
+
+    "preferred_skills": [
+      "PostgreSQL",
+      "CI/CD"
+    ]
+  }
+}

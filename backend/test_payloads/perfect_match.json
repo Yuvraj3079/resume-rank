@@ -1,0 +1,43 @@
+{
+  "resume": {
+    "name": "Alex Johnson",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "Docker",
+      "AWS",
+      "PostgreSQL",
+      "CI/CD"
+    ],
+    "experience": [
+      {
+        "company": "CloudScale",
+        "role": "Backend Engineer"
+      },
+      {
+        "company": "DataSystems",
+        "role": "Software Developer"
+      },
+      {
+        "company": "InfraTech",
+        "role": "Platform Engineer"
+      }
+    ]
+  },
+
+  "jd": {
+    "title": "Senior Backend Engineer",
+
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Docker",
+      "AWS"
+    ],
+
+    "preferred_skills": [
+      "PostgreSQL",
+      "CI/CD"
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "resume": {
+    "name": "Sophia Lee",
+
+    "skills": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "TypeScript",
+      "REST APIs"
+    ],
+
+    "experience": [
+      {
+        "company": "UIWorks",
+        "role": "Frontend Developer"
+      },
+      {
+        "company": "DesignFlow",
+        "role": "React Engineer"
+      }
+    ]
+  },
+
+  "jd": {
+    "title": "Backend Engineer",
+
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Docker"
+    ],
+
+    "preferred_skills": [
+      "AWS",
+      "CI/CD"
+    ]
+  }
+}

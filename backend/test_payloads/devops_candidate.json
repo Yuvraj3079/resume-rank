@@ -1,0 +1,40 @@
+{
+  "resume": {
+    "name": "Michael Brown",
+
+    "skills": [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD"
+    ],
+
+    "experience": [
+      {
+        "company": "CloudOps",
+        "role": "DevOps Engineer"
+      },
+      {
+        "company": "ScaleInfra",
+        "role": "Site Reliability Engineer"
+      }
+    ]
+  },
+
+  "jd": {
+    "title": "Backend Engineer",
+
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Docker",
+      "AWS"
+    ],
+
+    "preferred_skills": [
+      "PostgreSQL",
+      "CI/CD"
+    ]
+  }
+}

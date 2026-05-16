@@ -20,10 +20,22 @@ class EvaluationRequest(BaseModel):
     jd: JobDescription
     
 class EvaluationResult(BaseModel):
-    match_score: int
+    overall_score: int
+    
+    skills_score: int
+    experience_score: int
+    semantic_score: int
+    
     matched_skills: List[str]
-    missing_skills: List[str]
-    summary: str
+    
+    missing_critical_skills: List[str]
+    missing_secondary_skills: List[str]
+    
+    strengths: List[str]
+    weaknesses: List[str]
+    
+    interview_risks: List[str]
+    
     improvement_suggestions: List[str]
     rewritten_bullets: List[str]
     

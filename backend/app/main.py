@@ -11,3 +11,7 @@ app.include_router(corpus_router)
 @app.get("/")
 def root():
     return {"message": "ResumeRank API running"}
+
+@app.get("/health")
+async def healtch_check():
+    return {"status": "healthy"}

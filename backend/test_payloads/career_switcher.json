@@ -1,0 +1,33 @@
+{
+  "resume": {
+    "name": "Daniel Carter",
+
+    "skills": [
+      "Python",
+      "Excel",
+      "Data Analysis",
+      "SQL"
+    ],
+
+    "experience": [
+      {
+        "company": "FinanceCorp",
+        "role": "Financial Analyst"
+      }
+    ]
+  },
+
+  "jd": {
+    "title": "Junior Backend Engineer",
+
+    "required_skills": [
+      "Python",
+      "FastAPI",
+      "Docker"
+    ],
+
+    "preferred_skills": [
+      "AWS"
+    ]
+  }
+}
