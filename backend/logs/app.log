@@ -1,0 +1,27 @@
+2026-05-18 17:12:48.408 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-05-18 17:12:48.661 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 16
+2026-05-18 17:12:55.841 | INFO     | app.services.comparator:compare_resume_to_jb:95 - 
+AI results: {'rewritten_bullets': ['Developed automated financial reporting tools using Python, enhancing data analysis efficiency and accuracy.', 'Utilized SQL for data extraction and manipulation, supporting data-driven decision-making within financial projects.', 'Collaborated with cross-functional teams to streamline data processes, leveraging Python to improve backend data workflows.'], 'interview_risks': ['Limited experience with FastAPI, which is a key requirement for the target role.', "No exposure to Docker, which may raise concerns about the candidate's ability to work in containerized environments.", "Potential difficulty in demonstrating practical backend engineering skills, as the candidate's experience is primarily in financial analysis."], 'improvement_suggestions': ['Gain hands-on experience with FastAPI by building small projects or contributing to open-source initiatives.', 'Familiarize yourself with Docker through online courses or tutorials to understand containerization concepts and practical applications.', 'Consider taking on personal or freelance projects that involve backend development to build a portfolio showcasing relevant skills.']}
+2026-05-18 17:12:55.851 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-05-18 17:13:01.152 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-05-18 17:13:01.152 | INFO     | app.services.comparator:compare_resume_to_jb:100 - Evaluation completed in 12.74s
+2026-05-18 17:15:59.251 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-05-18 17:15:59.318 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 16
+2026-05-18 17:16:05.405 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-05-18 17:16:10.207 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-05-18 17:16:10.207 | INFO     | app.services.comparator:compare_resume_to_jb:100 - Evaluation completed in 10.96s
+2026-05-18 17:17:42.641 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-05-18 17:17:42.677 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 16
+2026-05-18 17:17:49.502 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-05-18 17:17:53.042 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-05-18 17:17:53.043 | INFO     | app.services.comparator:compare_resume_to_jb:100 - Evaluation completed in 10.4s
+2026-05-18 17:22:22.796 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-05-18 17:22:22.863 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 16
+2026-05-18 17:22:30.017 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-05-18 17:22:32.862 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-05-18 17:22:32.862 | INFO     | app.services.comparator:compare_resume_to_jb:100 - Evaluation completed in 10.07s
+2026-05-19 11:05:42.924 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-05-19 11:05:43.240 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 69
+2026-05-19 11:05:52.329 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-05-19 11:05:54.615 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-05-19 11:05:54.615 | INFO     | app.services.comparator:compare_resume_to_jb:100 - Evaluation completed in 11.69s

@@ -1,7 +1,7 @@
 import chromadb
 from app.services.embeddings import generate_embedding
 
-client = chromadb.Client()
+client = chromadb.PersistentClient(path="./chroma_db")
 collection = client.get_or_create_collection(name = "resumes")
 
 def add_resume(resume_id: str, resume_text: str):

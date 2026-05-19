@@ -63,6 +63,7 @@ def generate_ai_insights(resume, jd, matched_skills, missing_skills):
         
     response = client.chat.completions.create(
         model ="gpt-4o-mini",
+        response_format={"type": "json_object"},
         messages = [
             {
                 "role": "user",
@@ -72,7 +73,6 @@ def generate_ai_insights(resume, jd, matched_skills, missing_skills):
         temperature = 0.4
     )
     content = response.choices[0].message.content
-    content = content.replace("```json", "").replace("```", "")
     
     try:
         parsed = json.loads(content)

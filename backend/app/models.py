@@ -39,3 +39,11 @@ class EvaluationResult(BaseModel):
     improvement_suggestions: List[str]
     rewritten_bullets: List[str]
     
+    #Recruiter Analysis
+    recruiter_summary: str
+    hire_recommendation: str
+    confidence_level: str
+    ats_risk: str
+    technical_gaps: List[str]
+    recruiter_questions: List[str]
+    

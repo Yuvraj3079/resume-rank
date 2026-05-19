@@ -4,8 +4,15 @@ from app.logger import logger
 from sentence_transformers import util
 from app.services.embeddings import generate_embedding
 from app.services.ai_enhancer import (generate_ai_insights)
+from app.services.recruiter_analysis import (generate_recruiter_analysis)
+import time
+from app.core.config import (SEMANTIC_WEIGHT, SKILLS_WEIGHT, EXPERIENCE_WEIGHT)
+
 
 def compare_resume_to_jb(resume: ResumeData, jd: JobDescription):
+    start_time = time.time()
+
+    logger.info("Starting resume evaluation")
     
     resume_text = " ".join(resume.skills)
     
@@ -35,9 +42,9 @@ def compare_resume_to_jb(resume: ResumeData, jd: JobDescription):
     overall_score = max(0,
         min(
             int(
-                skills_score * 0.5 +
-                semantic_score * 0.3 +
-                experience_score * 0.2
+                skills_score * SKILLS_WEIGHT +
+                semantic_score * SEMANTIC_WEIGHT +
+                experience_score * EXPERIENCE_WEIGHT
             ), 100 )
         )
     
@@ -85,7 +92,12 @@ def compare_resume_to_jb(resume: ResumeData, jd: JobDescription):
         )
         
     ai_results = generate_ai_insights(resume, jd, matched_skills, missing_critical_skills)
-    logger.info(f"AI results: {ai_results}")
+    #logger.info(f"\nAI results: {ai_results}")
+    
+    recruiter_analysis = generate_recruiter_analysis(resume, jd)
+    
+    total_time = round(time.time() - start_time, 2)
+    logger.info(f"Evaluation completed in {total_time}s")
     
     return EvaluationResult(
 
@@ -105,10 +117,15 @@ def compare_resume_to_jb(resume: ResumeData, jd: JobDescription):
         weaknesses = weaknesses,
 
         interview_risks = ai_results["interview_risks"],
-
         improvement_suggestions = ai_results["improvement_suggestions"],
-
-        rewritten_bullets = ai_results["rewritten_bullets"]
+        rewritten_bullets = ai_results["rewritten_bullets"],
+        
+        recruiter_summary = recruiter_analysis["recruiter_summary"],
+        hire_recommendation = recruiter_analysis["hire_recommendation"],
+        confidence_level = recruiter_analysis["confidence_level"],
+        ats_risk = recruiter_analysis["ats_risk"],
+        technical_gaps = recruiter_analysis["technical_gaps"],
+        recruiter_questions = recruiter_analysis["recruiter_questions"]
     )
     
     
