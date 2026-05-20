@@ -11,13 +11,28 @@ client = OpenAI(
 )
 
 SYSTEM_PROMT = """
-Extract the resume into structured JSON.
+You are an enterprise ATS resume parser.
+
+Extract structured candidate information from the resume.
+
+Rules:
+- Return ONLY valid JSON
+- Infer technical skills when appropriate
+- Normalize technologies
+- Remove duplicates
+- Use professional naming conventions
 
 Use EXACTLY this schema:
 
 {
   "name": "string",
-  "skills": ["skill1", "skill2"],
+
+  "skills": [
+    "Python",
+    "FastAPI",
+    "Docker"
+  ],
+
   "experience": [
     {
       "company": "string",
@@ -26,9 +41,15 @@ Use EXACTLY this schema:
   ]
 }
 
+Normalization examples:
+- reactjs → React
+- nodejs → Node.js
+- amazon web services → AWS
+- postgres → PostgreSQL
+
 IMPORTANT:
-- Use the field name 'role'
-- Do NOT use 'job_title'
+- Use field name 'role'
+- Never use 'job_title'
 - Return valid JSON only
 """
 
