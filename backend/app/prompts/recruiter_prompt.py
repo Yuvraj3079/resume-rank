@@ -1,12 +1,17 @@
-def build_recruiter_prompt(
-    resume,
-    jd
-):
+def build_recruiter_prompt(resume, jd):
 
     return f"""
-    You are an experienced technical recruiter.
+    You are a senior technical recruiter.
 
     Analyze this candidate against the role.
+
+    Evaluate:
+
+    - Technical alignment
+    - Missing capabilities
+    - ATS compatibility
+    - Hiring confidence
+    - Potential interview concerns
 
     Resume Skills:
     {resume.skills}
@@ -23,11 +28,17 @@ def build_recruiter_prompt(
     Return ONLY valid JSON.
 
     {{
+
         "recruiter_summary": "...",
+
         "hire_recommendation": "...",
+
         "confidence_level": "...",
+
         "ats_risk": "...",
+
         "technical_gaps": ["..."],
+
         "recruiter_questions": ["..."]
     }}
     """

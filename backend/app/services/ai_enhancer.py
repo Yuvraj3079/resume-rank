@@ -38,10 +38,16 @@ def generate_ai_insights(resume, jd, matched_skills, missing_skills):
         resume bullets tailored toward
         the target role.
 
-        2. Generate 3 interview risks
+        2. Generate realistic recruiter
+        strengths.
+
+        3. Generate realistic recruiter
+        weaknesses.
+
+        4. Generate 3 interview risks
         the candidate may face.
 
-        3. Generate 3 improvement suggestions.
+        5. Generate 3 improvement suggestions.
 
         Rules:
         - Be realistic
@@ -54,11 +60,17 @@ def generate_ai_insights(resume, jd, matched_skills, missing_skills):
 
         JSON format:
 
-        {{
-        "rewritten_bullets": [],
-        "interview_risks": [],
-        "improvement_suggestions": []
-        }}
+            {{
+            "rewritten_bullets": [],
+
+            "strengths": [],
+
+            "weaknesses": [],
+
+            "interview_risks": [],
+
+            "improvement_suggestions": []
+            }}
         """
         
     response = client.chat.completions.create(
@@ -79,6 +91,8 @@ def generate_ai_insights(resume, jd, matched_skills, missing_skills):
     except Exception:
         parsed = {
         "rewritten_bullets": [],
+        "strengths": [],
+        "weaknesses": [],
         "interview_risks": [],
         "improvement_suggestions": []
         }

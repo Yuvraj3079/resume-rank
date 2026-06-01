@@ -39,6 +39,9 @@ class EvaluationResult(BaseModel):
     improvement_suggestions: List[str]
     rewritten_bullets: List[str]
     
+    
+
+class RecruiterAnalysis(BaseModel):
     #Recruiter Analysis
     recruiter_summary: str
     hire_recommendation: str
@@ -46,4 +49,3 @@ class EvaluationResult(BaseModel):
     ats_risk: str
     technical_gaps: List[str]
     recruiter_questions: List[str]
-    

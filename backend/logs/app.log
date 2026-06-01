@@ -29,3 +29,22 @@ AI results: {'rewritten_bullets': ['Developed automated financial reporting tool
 2026-05-20 14:43:40.867 | INFO     | app.routers.upload:upload_resume:47 - 'str' object is not callable
 2026-05-20 14:46:12.800 | INFO     | app.routers.upload:upload_resume:47 - name 'io' is not defined
 2026-05-20 14:46:24.132 | INFO     | app.routers.upload:upload_resume:47 - name 'io' is not defined
+2026-05-21 04:59:30.538 | INFO     | app.routers.upload:upload_resume:67 - add_resume() missing 1 required positional argument: 'resume_id'
+2026-05-21 05:03:34.909 | INFO     | app.routers.upload:upload_resume:67 - Empty ID, ID must have at least one character
+2026-05-21 05:05:28.549 | INFO     | app.routers.upload:upload_resume:68 - Empty ID, ID must have at least one character
+2026-05-21 05:08:37.373 | INFO     | app.routers.upload:upload_resume:68 - cannot access local variable 'resume_id' where it is not associated with a value
+2026-05-21 08:05:42.258 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-05-21 08:05:42.694 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 72
+2026-05-21 08:05:48.929 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-05-21 08:05:54.979 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-05-21 08:05:54.979 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 12.72s
+2026-05-21 08:06:53.597 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-05-21 08:06:53.651 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: -2
+2026-05-21 08:07:00.071 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-05-21 08:07:02.852 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-05-21 08:07:02.853 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 9.26s
+2026-06-02 02:35:33.584 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-06-02 02:35:33.686 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 52
+2026-06-02 02:35:42.896 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-06-02 02:35:45.943 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-06-02 02:35:45.944 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 12.36s

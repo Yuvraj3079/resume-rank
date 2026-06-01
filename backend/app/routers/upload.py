@@ -2,6 +2,7 @@ from fastapi import APIRouter, UploadFile, File, HTTPException
 from pypdf import PdfReader
 from io import BytesIO
 from app.logger import logger
+from app.services.vectorscore import add_resume
 from app.services.extractor import extract_resume_data
 
 router = APIRouter()
@@ -39,9 +40,29 @@ async def upload_resume(file: UploadFile = File(...)):
                 extracted_text += page_text + "\n"
         
         extracted_text = " ".join(extracted_text.split())
+        resume_data = extract_resume_data(extracted_text)
+        #print(resume_data)
+        result = add_resume(
+            resume_text = extracted_text,
+            candidate_name= resume_data.name,
+            skills= resume_data.skills,
+            experience_count= len(resume_data.experience)
+        )
+        #print(result)
+        if result["duplicate"]:
+
+            return {
+
+                "message":
+                    "Duplicate resume detected.",
+
+                "resume_data":
+                    resume_data.model_dump()
+            }
         return {
+            "resume_id": result["resume_id"],
             "filename": file.filename,
-            "content": extracted_text
+            "content": resume_data.model_dump()
         }
     except Exception as e:
         logger.info(e)

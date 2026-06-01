@@ -1,5 +1,5 @@
 from openai import OpenAI
-from app.models import ResumeData, JobDescription
+from app.models import ResumeData, JobDescription, RecruiterAnalysis
 import os
 import json
 from app.core.config import (OPENAI_API_KEY, OPENAI_MODEL)
@@ -33,7 +33,10 @@ def generate_recruiter_analysis(resume: ResumeData, jd: JobDescription):
         logger.info("Recruiter analysis completed")
         
         try:
-            return json.loads(content)
+            data = json.loads(content)
+            validated_data = RecruiterAnalysis(**data)
+            
+            return validated_data.model_dump()
 
         except Exception :
             return {

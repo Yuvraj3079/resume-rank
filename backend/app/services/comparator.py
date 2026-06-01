@@ -64,36 +64,10 @@ def compare_resume_to_jb(resume: ResumeData, jd: JobDescription):
 
             missing_secondary_skills.append(skill)
 
-    weaknesses = []
-    
-    if len(missing_critical_skills) > 2:
-
-        weaknesses.append(
-            "Missing several required technical skills."
-        )
-
-    if semantic_score < 60:
-
-        weaknesses.append(
-            "Resume language does not strongly align with the job description."
-        )
-
-    strengths = []
-    if skills_score > 70:
-
-        strengths.append(
-            "Strong alignment with required technical stack."
-        )
-
-    if semantic_score > 75:
-
-        strengths.append(
-            "Resume language closely matches the role requirements."
-        )
-        
     ai_results = generate_ai_insights(resume, jd, matched_skills, missing_critical_skills)
     #logger.info(f"\nAI results: {ai_results}")
-    
+    strengths = ai_results.get("strengths", [])
+    weaknesses = ai_results.get("weaknesses", [])
     recruiter_analysis = generate_recruiter_analysis(resume, jd)
     
     total_time = round(time.time() - start_time, 2)
@@ -116,17 +90,19 @@ def compare_resume_to_jb(resume: ResumeData, jd: JobDescription):
         strengths = strengths,
         weaknesses = weaknesses,
 
-        interview_risks = ai_results["interview_risks"],
-        improvement_suggestions = ai_results["improvement_suggestions"],
-        rewritten_bullets = ai_results["rewritten_bullets"],
+        interview_risks =ai_results.get("interview_risks", []),
+
+        improvement_suggestions = ai_results.get("improvement_suggestions", []),
+
+        rewritten_bullets = ai_results.get("rewritten_bullets", []),
         
-        recruiter_summary = recruiter_analysis["recruiter_summary"],
-        hire_recommendation = recruiter_analysis["hire_recommendation"],
-        confidence_level = recruiter_analysis["confidence_level"],
-        ats_risk = recruiter_analysis["ats_risk"],
-        technical_gaps = recruiter_analysis["technical_gaps"],
-        recruiter_questions = recruiter_analysis["recruiter_questions"]
-    )
+        recruiter_summary = recruiter_analysis.get("recruiter_summary", "Unavailable"),
+        hire_recommendation = recruiter_analysis.get( "hire_recommendation", "Unknown"),
+        confidence_level = recruiter_analysis.get( "confidence_level", "Low"),
+        ats_risk = recruiter_analysis.get( "ats_risk", "Unknown"),
+        technical_gaps = recruiter_analysis.get("technical_gaps", []),
+        recruiter_questions = recruiter_analysis.get( "recruiter_questions", [])
+        )
     
     
     
