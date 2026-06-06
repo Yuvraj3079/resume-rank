@@ -49,3 +49,5 @@ class RecruiterAnalysis(BaseModel):
     ats_risk: str
     technical_gaps: List[str]
     recruiter_questions: List[str]
+class JobDescriptionParseRequest(BaseModel):
+    jd_text: str

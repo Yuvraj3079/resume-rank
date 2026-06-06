@@ -1,0 +1,281 @@
+/* =========================
+   PAGE LAYOUT
+   ========================= */
+
+.app-page {
+  @apply min-h-screen bg-slate-950 text-white p-6 md:p-10;
+}
+
+.app-header {
+  @apply mb-10;
+}
+
+.app-title {
+  @apply text-4xl md:text-5xl font-bold;
+}
+
+.app-subtitle {
+  @apply text-slate-400 mt-3 max-w-3xl;
+}
+
+.app-grid {
+  @apply grid grid-cols-1 xl:grid-cols-3 gap-8;
+}
+
+.sidebar-column {
+  @apply xl:col-span-1;
+}
+
+.results-column {
+  @apply xl:col-span-2 space-y-6;
+}
+
+
+/* =========================
+   COMMON CARD STYLES
+   ========================= */
+
+.card {
+  @apply bg-slate-900 border border-slate-700 rounded-2xl;
+}
+
+.card-dark {
+  @apply bg-slate-800 border border-slate-700 rounded-2xl;
+}
+
+.card-padding {
+  @apply p-6;
+}
+
+.card-section {
+  @apply bg-slate-800 border border-slate-700 p-6 rounded-2xl;
+}
+
+.card-section-dark {
+  @apply bg-slate-900 border border-slate-700 p-6 rounded-2xl;
+}
+
+
+/* =========================
+   TEXT STYLES
+   ========================= */
+
+.section-title {
+  @apply text-2xl font-semibold;
+}
+
+.panel-title {
+  @apply text-xl font-semibold mb-4;
+}
+
+.muted-text {
+  @apply text-slate-400;
+}
+
+.small-muted-text {
+  @apply text-sm text-slate-400;
+}
+
+.body-text {
+  @apply text-slate-200 leading-relaxed;
+}
+
+
+/* =========================
+   INPUT SECTION
+   ========================= */
+
+.input-panel {
+  @apply bg-slate-900 border border-slate-700 p-6 rounded-2xl space-y-6;
+}
+
+.input-label {
+  @apply block mb-2 text-sm text-slate-300;
+}
+
+.text-area {
+  @apply w-full p-4 rounded-xl bg-slate-800 border border-slate-700 text-white;
+}
+
+.file-input {
+  @apply block w-full text-sm text-slate-300 file:mr-4 file:rounded-lg file:border-0 file:bg-blue-600 file:px-4 file:py-2 file:text-white hover:file:bg-blue-700;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.primary-button {
+  @apply bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-700 disabled:opacity-50;
+}
+
+.secondary-button {
+  @apply bg-slate-700 px-4 py-2 rounded-lg hover:bg-slate-600 disabled:opacity-50;
+}
+
+
+/* =========================
+   SCORE CARDS
+   ========================= */
+
+.score-grid {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-4;
+}
+
+.score-card {
+  @apply bg-slate-800 border border-slate-700 p-5 rounded-2xl;
+}
+
+.score-label {
+  @apply text-slate-400 text-sm;
+}
+
+.score-value {
+  @apply text-3xl font-bold mt-2;
+}
+
+.score-percent {
+  @apply text-lg text-slate-400;
+}
+
+
+/* =========================
+   TAGS / BADGES
+   ========================= */
+
+.badge-row {
+  @apply flex gap-2 flex-wrap;
+}
+
+.badge {
+  @apply px-3 py-2 rounded-full border text-sm;
+}
+
+.badge-blue {
+  @apply bg-blue-500/20 text-blue-300 border-blue-500/40;
+}
+
+.badge-purple {
+  @apply bg-purple-500/20 text-purple-300 border-purple-500/40;
+}
+
+.badge-yellow {
+  @apply bg-yellow-500/20 text-yellow-300 border-yellow-500/40;
+}
+
+.badge-green {
+  @apply bg-green-500/20 text-green-300 border-green-500/40;
+}
+
+.badge-red {
+  @apply bg-red-500/20 text-red-300 border-red-500/40;
+}
+
+.tag-container {
+  @apply flex flex-wrap gap-3;
+}
+
+.skill-tag {
+  @apply px-3 py-2 rounded-full border text-sm;
+}
+
+
+/* =========================
+   LIST PANELS
+   ========================= */
+
+.list-panel {
+  @apply bg-slate-800 border border-slate-700 p-6 rounded-2xl;
+}
+
+.list-items {
+  @apply space-y-3;
+}
+
+.list-item {
+  @apply bg-slate-900 border border-slate-700 p-3 rounded-xl text-slate-200;
+}
+
+.rewrite-item {
+  @apply bg-slate-900 border border-slate-700 p-4 rounded-xl leading-relaxed;
+}
+
+
+/* =========================
+   STATUS / EMPTY / ERROR
+   ========================= */
+
+.empty-state {
+  @apply bg-slate-900 border border-slate-700 p-8 rounded-2xl;
+}
+
+.error-banner {
+  @apply mt-6 bg-red-500/20 border border-red-500/40 text-red-200 p-4 rounded-xl;
+}
+
+.loader-box {
+  @apply bg-slate-800 p-4 rounded-xl border border-slate-700;
+}
+
+.loader-title {
+  @apply text-blue-300;
+}
+
+.loader-subtitle {
+  @apply text-sm text-slate-400 mt-1;
+}
+
+
+/* =========================
+   RESPONSIVE GRIDS
+   ========================= */
+
+.two-column-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+
+/* =========================
+   SCORE STATUS COLORS
+   ========================= */
+
+.score-high {
+  @apply text-green-300;
+}
+
+.score-medium {
+  @apply text-yellow-300;
+}
+
+.score-low {
+  @apply text-red-300;
+}
+
+.score-status {
+  @apply text-sm mt-2 font-medium;
+}
+
+/* =========================
+   RECRUITER STATUS BADGES
+   ========================= */
+
+.status-badge {
+  @apply px-3 py-2 rounded-full border text-sm font-medium;
+}
+
+.status-good {
+  @apply bg-green-500/20 text-green-300 border-green-500/40;
+}
+
+.status-medium {
+  @apply bg-yellow-500/20 text-yellow-300 border-yellow-500/40;
+}
+
+.status-bad {
+  @apply bg-red-500/20 text-red-300 border-red-500/40;
+}
+
+.status-neutral {
+  @apply bg-blue-500/20 text-blue-300 border-blue-500/40;
+}

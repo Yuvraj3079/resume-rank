@@ -1,3 +1,32 @@
-# Secrets
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Environment variables
 .env
 backend/.env
+
+# ChromaDB local database
+chroma_db/
+backend/chroma_db/
+
+# Logs
+logs/
+*.log
+
+# Node
+node_modules/
+dist/
+build/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local test files
+*.pdf

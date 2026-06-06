@@ -48,3 +48,50 @@ AI results: {'rewritten_bullets': ['Developed automated financial reporting tool
 2026-06-02 02:35:42.896 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
 2026-06-02 02:35:45.943 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
 2026-06-02 02:35:45.944 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 12.36s
+2026-06-03 01:10:25.670 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-06-03 01:10:25.989 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 88
+2026-06-03 01:10:36.057 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-06-03 01:10:39.117 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-06-03 01:10:39.128 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 13.46s
+2026-06-03 01:18:02.165 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-06-03 01:18:02.201 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 37
+2026-06-03 01:18:08.048 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-06-03 01:18:12.654 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-06-03 01:18:12.654 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 10.49s
+2026-06-04 02:21:44.625 | INFO     | app.services.jd_extractor:extract_job_description:48 - Starting job description extraction
+2026-06-04 02:21:48.572 | INFO     | app.services.jd_extractor:extract_job_description:71 - Job description extraction completed
+2026-06-04 02:28:14.049 | INFO     | app.services.jd_extractor:extract_job_description:48 - Starting job description extraction
+2026-06-04 02:28:17.366 | INFO     | app.services.jd_extractor:extract_job_description:71 - Job description extraction completed
+2026-06-04 02:28:30.625 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-06-04 02:28:30.682 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 37
+2026-06-04 02:28:37.679 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-06-04 02:28:41.936 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-06-04 02:28:41.944 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 11.32s
+2026-06-04 05:54:31.567 | INFO     | app.services.jd_extractor:extract_job_description:48 - Starting job description extraction
+2026-06-04 05:54:34.660 | INFO     | app.services.jd_extractor:extract_job_description:71 - Job description extraction completed
+2026-06-04 05:54:34.677 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-06-04 05:54:34.716 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 45
+2026-06-04 05:54:40.191 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-06-04 05:54:44.998 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-06-04 05:54:44.998 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 10.32s
+2026-06-04 06:00:28.013 | INFO     | app.services.jd_extractor:extract_job_description:48 - Starting job description extraction
+2026-06-04 06:00:31.024 | INFO     | app.services.jd_extractor:extract_job_description:71 - Job description extraction completed
+2026-06-04 06:00:31.032 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-06-04 06:00:31.077 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 46
+2026-06-04 06:00:36.270 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-06-04 06:00:42.909 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-06-04 06:00:42.909 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 11.88s
+2026-06-04 06:03:45.119 | INFO     | app.services.jd_extractor:extract_job_description:48 - Starting job description extraction
+2026-06-04 06:03:47.796 | INFO     | app.services.jd_extractor:extract_job_description:71 - Job description extraction completed
+2026-06-04 06:03:47.802 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-06-04 06:03:47.839 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 41
+2026-06-04 06:03:54.060 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-06-04 06:03:57.905 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-06-04 06:03:57.905 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 10.1s
+2026-06-04 06:07:29.689 | INFO     | app.services.jd_extractor:extract_job_description:48 - Starting job description extraction
+2026-06-04 06:07:32.107 | INFO     | app.services.jd_extractor:extract_job_description:71 - Job description extraction completed
+2026-06-04 06:07:32.113 | INFO     | app.services.comparator:compare_resume_to_jb:15 - Starting resume evaluation
+2026-06-04 06:07:32.144 | INFO     | app.services.comparator:compare_resume_to_jb:29 - Semantic Score: 42
+2026-06-04 06:07:38.680 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:17 - Starting recruiter analysis
+2026-06-04 06:07:42.944 | INFO     | app.services.recruiter_analysis:generate_recruiter_analysis:33 - Recruiter analysis completed
+2026-06-04 06:07:42.944 | INFO     | app.services.comparator:compare_resume_to_jb:74 - Evaluation completed in 10.83s

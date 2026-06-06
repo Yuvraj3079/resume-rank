@@ -50,19 +50,17 @@ async def upload_resume(file: UploadFile = File(...)):
         )
         #print(result)
         if result["duplicate"]:
-
             return {
-
-                "message":
-                    "Duplicate resume detected.",
-
-                "resume_data":
-                    resume_data.model_dump()
+                "message": "Duplicate resume detected.",
+                "filename": file.filename,
+                "resume_data": resume_data.model_dump()
             }
+        
         return {
+            "message": "Resume uploaded successfully.",
             "resume_id": result["resume_id"],
             "filename": file.filename,
-            "content": resume_data.model_dump()
+            "resume_data": resume_data.model_dump()
         }
     except Exception as e:
         logger.info(e)
